@@ -168,8 +168,8 @@ class _$ContinentImpl implements _Continent {
 
 abstract class _Continent implements Continent {
   const factory _Continent({
-    required final String name,
-    required final String imageUrl,
+    required String name,
+    required String imageUrl,
   }) = _$ContinentImpl;
 
   factory _Continent.fromJson(Map<String, dynamic> json) =

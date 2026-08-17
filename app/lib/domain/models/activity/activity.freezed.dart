@@ -371,16 +371,16 @@ class _$ActivityImpl implements _Activity {
 
 abstract class _Activity implements Activity {
   const factory _Activity({
-    required final String name,
-    required final String description,
-    required final String locationName,
-    required final int duration,
-    required final TimeOfDay timeOfDay,
-    required final bool familyFriendly,
-    required final int price,
-    required final String destinationRef,
-    required final String ref,
-    required final String imageUrl,
+    required String name,
+    required String description,
+    required String locationName,
+    required int duration,
+    required TimeOfDay timeOfDay,
+    required bool familyFriendly,
+    required int price,
+    required String destinationRef,
+    required String ref,
+    required String imageUrl,
   }) = _$ActivityImpl;
 
   factory _Activity.fromJson(Map<String, dynamic> json) =

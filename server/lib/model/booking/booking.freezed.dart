@@ -197,7 +197,7 @@ class _$BookingImpl implements _Booking {
     required this.endDate,
     required this.name,
     required this.destinationRef,
-    required final List<String> activitiesRef,
+    required List<String> activitiesRef,
   }) : _activitiesRef = activitiesRef;
 
   factory _$BookingImpl.fromJson(Map<String, dynamic> json) =>
@@ -286,12 +286,12 @@ class _$BookingImpl implements _Booking {
 
 abstract class _Booking implements Booking {
   const factory _Booking({
-    final int? id,
-    required final DateTime startDate,
-    required final DateTime endDate,
-    required final String name,
-    required final String destinationRef,
-    required final List<String> activitiesRef,
+    int? id,
+    required DateTime startDate,
+    required DateTime endDate,
+    required String name,
+    required String destinationRef,
+    required List<String> activitiesRef,
   }) = _$BookingImpl;
 
   factory _Booking.fromJson(Map<String, dynamic> json) = _$BookingImpl.fromJson;

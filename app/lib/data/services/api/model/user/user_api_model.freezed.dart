@@ -216,10 +216,10 @@ class _$UserApiModelImpl implements _UserApiModel {
 
 abstract class _UserApiModel implements UserApiModel {
   const factory _UserApiModel({
-    required final String id,
-    required final String name,
-    required final String email,
-    required final String picture,
+    required String id,
+    required String name,
+    required String email,
+    required String picture,
   }) = _$UserApiModelImpl;
 
   factory _UserApiModel.fromJson(Map<String, dynamic> json) =

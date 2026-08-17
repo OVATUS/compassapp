@@ -210,10 +210,10 @@ class _$UserImpl implements _User {
 
 abstract class _User implements User {
   const factory _User({
-    required final String id,
-    required final String name,
-    required final String email,
-    required final String picture,
+    required String id,
+    required String name,
+    required String email,
+    required String picture,
   }) = _$UserImpl;
 
   factory _User.fromJson(Map<String, dynamic> json) = _$UserImpl.fromJson;

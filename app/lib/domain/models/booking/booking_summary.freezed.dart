@@ -220,10 +220,10 @@ class _$BookingSummaryImpl implements _BookingSummary {
 
 abstract class _BookingSummary implements BookingSummary {
   const factory _BookingSummary({
-    required final int id,
-    required final String name,
-    required final DateTime startDate,
-    required final DateTime endDate,
+    required int id,
+    required String name,
+    required DateTime startDate,
+    required DateTime endDate,
   }) = _$BookingSummaryImpl;
 
   factory _BookingSummary.fromJson(Map<String, dynamic> json) =

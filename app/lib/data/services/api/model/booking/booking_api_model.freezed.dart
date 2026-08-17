@@ -201,7 +201,7 @@ class _$BookingApiModelImpl implements _BookingApiModel {
     required this.endDate,
     required this.name,
     required this.destinationRef,
-    required final List<String> activitiesRef,
+    required List<String> activitiesRef,
   }) : _activitiesRef = activitiesRef;
 
   factory _$BookingApiModelImpl.fromJson(Map<String, dynamic> json) =>
@@ -293,12 +293,12 @@ class _$BookingApiModelImpl implements _BookingApiModel {
 
 abstract class _BookingApiModel implements BookingApiModel {
   const factory _BookingApiModel({
-    final int? id,
-    required final DateTime startDate,
-    required final DateTime endDate,
-    required final String name,
-    required final String destinationRef,
-    required final List<String> activitiesRef,
+    int? id,
+    required DateTime startDate,
+    required DateTime endDate,
+    required String name,
+    required String destinationRef,
+    required List<String> activitiesRef,
   }) = _$BookingApiModelImpl;
 
   factory _BookingApiModel.fromJson(Map<String, dynamic> json) =

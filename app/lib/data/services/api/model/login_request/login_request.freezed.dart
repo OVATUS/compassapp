@@ -170,8 +170,8 @@ class _$LoginRequestImpl implements _LoginRequest {
 
 abstract class _LoginRequest implements LoginRequest {
   const factory _LoginRequest({
-    required final String email,
-    required final String password,
+    required String email,
+    required String password,
   }) = _$LoginRequestImpl;
 
   factory _LoginRequest.fromJson(Map<String, dynamic> json) =

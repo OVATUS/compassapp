@@ -215,7 +215,7 @@ class _$DestinationImpl implements _Destination {
     required this.country,
     required this.continent,
     required this.knownFor,
-    required final List<String> tags,
+    required List<String> tags,
     required this.imageUrl,
   }) : _tags = tags;
 
@@ -308,13 +308,13 @@ class _$DestinationImpl implements _Destination {
 
 abstract class _Destination implements Destination {
   const factory _Destination({
-    required final String ref,
-    required final String name,
-    required final String country,
-    required final String continent,
-    required final String knownFor,
-    required final List<String> tags,
-    required final String imageUrl,
+    required String ref,
+    required String name,
+    required String country,
+    required String continent,
+    required String knownFor,
+    required List<String> tags,
+    required String imageUrl,
   }) = _$DestinationImpl;
 
   factory _Destination.fromJson(Map<String, dynamic> json) =

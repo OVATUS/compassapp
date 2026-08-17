@@ -200,7 +200,7 @@ class _$ItineraryConfigImpl implements _ItineraryConfig {
     this.endDate,
     this.guests,
     this.destination,
-    final List<String> activities = const [],
+    List<String> activities = const [],
   }) : _activities = activities;
 
   factory _$ItineraryConfigImpl.fromJson(Map<String, dynamic> json) =>
@@ -293,12 +293,12 @@ class _$ItineraryConfigImpl implements _ItineraryConfig {
 
 abstract class _ItineraryConfig implements ItineraryConfig {
   const factory _ItineraryConfig({
-    final String? continent,
-    final DateTime? startDate,
-    final DateTime? endDate,
-    final int? guests,
-    final String? destination,
-    final List<String> activities,
+    String? continent,
+    DateTime? startDate,
+    DateTime? endDate,
+    int? guests,
+    String? destination,
+    List<String> activities,
   }) = _$ItineraryConfigImpl;
 
   factory _ItineraryConfig.fromJson(Map<String, dynamic> json) =
